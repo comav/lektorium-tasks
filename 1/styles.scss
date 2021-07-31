@@ -1,0 +1,117 @@
+//general styles
+
+.cube-side {
+    width: 75px;
+    height: 75px;
+    border-radius: 20px;
+    border: solid 5px black;
+    margin: 10px;
+
+    .dot {
+        width: 18px;
+        height: 18px;
+        background-color: #000;
+        border-radius: 10px;
+        margin: 5px;
+    }
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+//cube side with 6 dots
+
+.six {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.row {                      // .row and .row-wrapper also used by 4 dots side
+    margin: 5px;
+}
+
+.row-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+//cube side with 4 dots
+
+.filler {
+    width: 10px;
+    height: 10px;
+}
+
+//cube side with 1 dot
+
+.one {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+//cube side with 5 dots
+
+.five {
+    .dot {
+        margin: 5px 0.2px;
+    }
+}
+
+//cube side with two dots
+
+.two {
+    display: flex;
+    flex-direction: column;
+
+    .row {
+        display: flex;
+    }
+
+    .dot {
+        flex-grow: 1;
+    }
+    .filler {
+        height: 100;
+        flex-grow: 1000;
+    }
+}
+
+// cube with three dots
+
+.three {
+    display: flex;
+    flex-direction: column;
+
+    .row {
+        display: flex;
+    }
+
+    .dot {
+        flex-grow: 1;
+    }
+
+    .one {
+        
+        height: 0px;
+
+        .dot {
+            flex-grow: unset;
+        }
+    }
+
+    .filler {
+        height: 100;
+        flex-grow: 1000;
+    }
+}
