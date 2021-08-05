@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap');
+
+.logo {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #576bcd;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #5b6fce;
+  font-weight: bold;
+}
+
+input, button {
+  cursor: pointer;
+}
+
+.login-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.login {
+  position: relative;
+  width: 450px;
+  height: 420px;
+  box-shadow: 0px 3px 5px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.login-contents {
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 20px;
+  width: calc(100% - 20px);
+}
+
+.login-text {
+  font-family: 'Open sans', sans-serif;
+}
+
+.label-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+label {
+  margin-bottom: 3px;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-weight: 500;
+  font-size: 15;
+}
+
+.input-wrapper input {
+  width: 98%;
+  height: 30px;
+  margin-bottom: 20px;
+  border: solid 2px #eaeaec;
+  border-radius: 3px;
+  transition: 0.1s ease-in;
+}
+
+.input-wrapper input:focus {
+  outline: none !important;
+  border-color: #aab4e4;
+}
+
+.label-wrapper a {
+  display: flex;
+  justify-self: flex-end;
+}
+
+.checkbox-wrapper {
+  display: flex;
+  flex-direction: row;
+  margin: 0px;
+  font-weight: 500;
+}
+
+.checkbox-wrapper p {
+  margin-left: 3px;
+}
+
+.checkbox {
+  margin-left: 0px;
+}
+
+.checkbox:checked {
+  color: red;
+}
+
+.button {
+  height: 36px;
+  width: 100%;
+  color: white;
+  background-color: #576bcd;
+  border: none;
+  border-radius: 2px;
+  font-weight: bold;
+  font-size: medium;
+}
+
+.google-sign-in {
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.sign-up {
+  margin-top: 30px;
+}
